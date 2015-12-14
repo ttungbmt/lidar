@@ -1,0 +1,14 @@
+{
+  "name": "leaflet-geometry",
+  "homepage": "https://github.com/sonnygauran/Leaflet.GeometryUtil",
+  "version": "0.4.0",
+  "_release": "0.4.0",
+  "_resolution": {
+    "type": "version",
+    "tag": "v0.4.0",
+    "commit": "2ea3ae8c2d8e588d8672690936883c87df44ca40"
+  },
+  "_source": "git://github.com/sonnygauran/Leaflet.GeometryUtil.git",
+  "_target": "~0.4.0",
+  "_originalSource": "leaflet-geometry"
+}

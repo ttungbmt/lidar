@@ -1,0 +1,37 @@
+{
+  "name": "Leaflet.buffer",
+  "version": "0.1.4",
+  "homepage": "https://github.com/skeate/Leaflet.buffer",
+  "authors": [
+    "Jonathan Skeate <skeate@gmail.com>"
+  ],
+  "description": "Create a buffer around shapes drawn with Leaflet.draw",
+  "main": "dist/leaflet.buffer.js",
+  "keywords": [
+    "leaflet",
+    "buffer",
+    "draw"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "leaflet": "~0.7.3",
+    "leaflet.draw": "~0.2.3",
+    "jsts": "~0.14.0"
+  },
+  "_release": "0.1.4",
+  "_resolution": {
+    "type": "version",
+    "tag": "0.1.4",
+    "commit": "f1106e2109b50ab4a87c4ce74b94ced924d3297a"
+  },
+  "_source": "git://github.com/skeate/Leaflet.buffer.git",
+  "_target": "~0.1.4",
+  "_originalSource": "leaflet.buffer"
+}

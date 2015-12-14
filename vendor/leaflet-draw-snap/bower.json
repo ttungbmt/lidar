@@ -1,0 +1,23 @@
+{
+  "name": "leaflet-draw-snap",
+  "version": "1.0.0",
+  "homepage": "https://github.com/sonnygauran/Leaflet.Snap",
+  "authors": [
+    "Sonny Gauran <sonnygauran@gmail.com>"
+  ],
+  "description": "Enables snapping of draggable markers to polylines and other layers",
+  "main": "leaflet.snap.js,marker-snap.png",
+  "keywords": [
+    "leaflet",
+    "draw",
+    "snap"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}

@@ -1,0 +1,33 @@
+{
+  "name": "My Mapping API",
+  "version": "0.0.1",
+  "homepage": "",
+  "moduleType": [
+    "node"
+  ],
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "leaflet": "~0.7.7",
+    "Proj4Leaflet": "proj4leaflet#~0.7.2",
+    "leaflet-draw": "~0.2.4",
+    "leaflet-minimap": "~3.0.0",
+    "leaflet.locatecontrol": "~0.45.1",
+    "leaflet-fullscreen": "leaflet-fullscreen-bower#~0.0.4",
+    "ngAutocomplete": "~1.0.0",
+    "Leaflet.MakiMarkers": "~1.0.1",
+    "leaflet-plugins": "~1.3.12",
+    "leaflet-draw-snap": "*",
+    "leaflet-geometry": "~0.4.0",
+    "Leaflet.buffer": "leaflet.buffer#~0.1.4",
+    "esri-leaflet": "~1.0.1",
+    "angular-esri-map": "~1.0.0"
+  }
+}

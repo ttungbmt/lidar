@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en" ng-app="myApp">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?libraries=places&sensor=false"></script>
+
+    <!-- Global stylesheets -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,300,100,500,700,900" rel="stylesheet" type="text/css">
+    <link href="theme/Limitless/css/icons/icomoon/styles.css" rel="stylesheet" type="text/css">
+    <link href="theme/Limitless/css/bootstrap.css" rel="stylesheet" type="text/css">
+    <link href="theme/Limitless/css/core.css" rel="stylesheet" type="text/css">
+    <link href="theme/Limitless/css/components.css" rel="stylesheet" type="text/css">
+    <link href="theme/Limitless/css/colors.css" rel="stylesheet" type="text/css">
+    <link href="theme/Limitless/css/extras/animate.min.css" rel="stylesheet" type="text/css">
+    <!-- /global stylesheets -->
+
+    <!-- Core JS files -->
+    <script type="text/javascript" src="theme/Limitless/js/core/libraries/jquery.min.js"></script>
+    <script type="text/javascript" src="theme/Limitless/js/core/libraries/bootstrap.min.js"></script>
+    <!-- /core JS files -->
+
+    <!-- Theme JS files -->
+    <script type="text/javascript" src="theme/Limitless/js/core/app.js"></script>
+    <!-- /theme JS files -->
+
+
+    <link rel="stylesheet" href="vendor/leaflet/dist/leaflet.css">
+    <script src="vendor/leaflet/dist/leaflet.js"></script>
+    <script src="vendor/esri-leaflet/dist/esri-leaflet.js"></script>
+    <script src="vendor/angular/angular.min.js"></script>
+    <script src="vendor/angular-simple-logger/dist/angular-simple-logger.min.js"></script>
+    <script src="libs/leaflet-angularjs/my-leaflet.js"></script>
+    <script src="vendor/ngAutocomplete/src/ngAutocomplete.js"></script>
+
+    <!--My Code-->
+    <link rel="stylesheet" href="app/assets/sass/map.css">
+    <script src="app/app.js"></script>
+
+</head>
+<body ng-controller="myController">
+<div class="search-text">
+    <div class="form-group has-feedback has-feedback-left">
+        <div class="input-group">
+            <input id="ip-search-google" type="text" class="form-control text-primary text-size-large text-semibold" ng-autocomplete="" ng-model="googleAutocomplete.result" options="googleAutocomplete.options" details="googleAutocomplete.details" ng-change="findGoogle()" ng-enter="findGoogle()" placeholder="Tìm kiếm theo địa điểm, địa chỉ...">
+        <span class="input-group-btn">
+            <button class="btn bg-primary text-semibold" type="button" ng-click="findGoogle()">Tìm kiếm</button>
+        </span>
+        </div>
+        <div class="form-control-feedback" style="z-index: 10">
+            <i class="icon-search4 text-size-base" style="color:#818185"></i>
+        </div>
+    </div>
+
+</div>
+
+<div class="content" style="position: absolute; width: 100%;height: 100%;">
+    <leaflet
+            lf-center="hcm"
+            defaults="defaults"
+            maxbounds="maxbounds"
+            markers="markers"
+            layers="layers"
+            width="100%" height="90%">
+    </leaflet>
+</div>
+
+</body>
+</html>

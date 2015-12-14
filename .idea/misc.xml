@@ -4,25 +4,6 @@
     <exe-path>C:\Users\ttungbmt\AppData\Roaming\npm\bower.cmd</exe-path>
     <config-path>F:\PROGRAM\laragon\www\webstorm\bower.json</config-path>
   </component>
-  <component name="ProjectDictionaryState">
-    <dictionary name="ttungbmt" />
-  </component>
-  <component name="ProjectInspectionProfilesVisibleTreeState">
-    <entry key="Project Default">
-      <profile-state>
-        <expanded-state>
-          <State>
-            <id />
-          </State>
-        </expanded-state>
-        <selected-state>
-          <State>
-            <id>Blade files</id>
-          </State>
-        </selected-state>
-      </profile-state>
-    </entry>
-  </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
     <OptionsSetting value="true" id="Remove" />
@@ -32,9 +13,6 @@
     <OptionsSetting value="true" id="Edit" />
     <ConfirmationsSetting value="0" id="Add" />
     <ConfirmationsSetting value="0" id="Remove" />
-  </component>
-  <component name="SvnConfiguration">
-    <configuration>C:\Users\ttungbmt\AppData\Roaming\Subversion</configuration>
   </component>
   <component name="masterDetails">
     <states>
