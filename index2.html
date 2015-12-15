@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="initial-scale=1,maximum-scale=1,user-scalable=no">
+  <title>ArcGISDynamicLayer - 4.0beta2</title>
+
+  <link rel="stylesheet" href="https://js.arcgis.com/4.0beta2/esri/css/main.css">
+  <script src="https://js.arcgis.com/4.0beta2/"></script>
+
+  <style>
+    html,
+    body {
+      padding: 0;
+      margin: 0;
+    }
+  </style>
+
+  <script>
+    require([
+        "esri/Map",
+                "esri/geometry/Point",
+        "esri/views/SceneView",
+        "esri/layers/ArcGISDynamicLayer",
+        "esri/Camera",
+        "dojo/domReady!"
+      ],
+      function(
+        Map, Point,SceneView, ArcGISDynamicLayer, Camera
+      ) {
+
+        /*****************************************************************
+         * Create an ArcGISDynamicLayer instance pointing to a Map Service
+         * containing data about pool permits in Southern California.
+         *****************************************************************/
+        var permitsLyr = new ArcGISDynamicLayer({
+          url: "http://hcmgisportal.vn:6080/arcgis/rest/services/BaseMap_LIDAR/MapServer"
+        });
+
+        /*****************************************************************
+         * Add the layer to a map
+         *****************************************************************/
+        var map = new Map({
+          basemap: "gray",
+          layers: [permitsLyr]
+        });
+
+          var cam = new Camera({
+              position: new Point({
+                  x: 106.656661,
+                  y: 10.792489,
+                  z: 10000,  //in meters
+                  spatialReference: 4326
+              }),
+              heading: 0,  //facing due south
+              tilt: 45  //bird's eye view
+          });
+        var view = new SceneView({
+          container: "viewDiv",
+          map: map,
+            camera: cam
+//          zoom: 15,
+//          center: [106.656661, 10.792489]
+        });
+
+
+          console.log(view)
+          view.animateTo(cam);
+
+        /*****************************************************************
+         * Animate to the layer's full extent when the layer loads.
+         *****************************************************************/
+        permitsLyr.then(function() {
+          view.animateTo(permitsLyr.fullExtent);
+        });
+      });
+  </script>
+</head>
+
+<body>
+  <div id="viewDiv"></div>
+</body>
+
+</html>

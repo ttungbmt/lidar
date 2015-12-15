@@ -34,6 +34,9 @@
     <script src="libs/leaflet-angularjs/my-leaflet.js"></script>
     <script src="vendor/ngAutocomplete/src/ngAutocomplete.js"></script>
 
+    <link href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.4/themes/smoothness/jquery-ui.min.css" rel="stylesheet" type="text/css"/>
+    <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.4/jquery-ui.min.js"></script>
+
     <!--My Code-->
     <link rel="stylesheet" href="app/assets/sass/map.css">
     <script src="app/app.js"></script>
@@ -54,15 +57,22 @@
     </div>
 
 </div>
+<div style="position: absolute; bottom: 5px;left: 7px; z-index: 10000"><a class="btn bg-teal-400 btn-rounded" type="button" href="/lidar/index2.html" target="_blank">Xem 3D</a></div>
 
+<div id="basemapslidercontainer" title="Bật lớp nền, lớp ảnh hàng không, kéo để làm trong suốt lớp nền">
+    <div id="basemapslider">
+    </div>
+</div>
 <div class="content" style="position: absolute; width: 100%;height: 100%;">
+
+
     <leaflet
             lf-center="hcm"
             defaults="defaults"
             maxbounds="maxbounds"
             markers="markers"
             layers="layers"
-            width="100%" height="90%">
+            width="100%" height="100%">
     </leaflet>
 </div>
 

@@ -1,7 +1,23 @@
-body {
-  margin: 0;
-  padding: 0;
+
+body { margin:0; padding:0; }
+//#map { position: absolute; top:0; bottom:0; right:0; left:0;
+//  background-image: url("img/bannerGiS2.png");
+//  background-color: #f0ede5;
+//}
+
+#basemapslidercontainer {
+  position: absolute;
+  top: 50px;
+  right: 10px;
+  z-index: 1000;
 }
+#basemapslider{
+  font-size:62.5%;
+  margin: 14px;
+  height: 125px;
+  width:7px;
+}
+
 
 .search-text {
   position: absolute;

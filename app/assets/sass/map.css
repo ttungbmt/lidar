@@ -2,6 +2,18 @@ body {
   margin: 0;
   padding: 0; }
 
+#basemapslidercontainer {
+  position: absolute;
+  top: 50px;
+  right: 10px;
+  z-index: 1000; }
+
+#basemapslider {
+  font-size: 62.5%;
+  margin: 14px;
+  height: 125px;
+  width: 7px; }
+
 .search-text {
   position: absolute;
   padding: 10px 10px;
